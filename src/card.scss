@@ -1,0 +1,54 @@
+@import 'variable'; 
+
+card-wrapper {
+  display: flex;
+  margin: $margin-20 auto;
+  max-width: 1024px;
+  flex-wrap: wrap;
+ }
+
+// Card - element styling changed to class - The name of a custom element must contain a dash (-).
+// this rule has conflict with BEM, so to avoid confusion changed to class
+.card {
+  background-color: $card-background;
+  border-radius: 6px;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.2));
+  padding: $default-spacing $default-spacing $padding-65 $default-spacing;
+  text-align: center;  
+  width: 100%;
+  margin: 0 $margin-10 $margin-20;
+}
+.card__image {
+  border-radius: 50%;
+}
+.card__title {
+  font-size: 28px;
+}
+.card__cta {
+  background-color: $card-cta-background;
+  color: $card-cta-color;
+  position: absolute;
+  bottom: 20px;
+  width: calc( 100% - 30px);
+  left: 15px;
+  border: 0;
+  padding: 5px;
+}
+
+@media only screen and (min-width: $large) {
+  card-el {
+    flex-basis: calc(25% - 30px);
+  }
+}
+
+@media only screen and (min-width: $medium-min) and (max-width: $medium-max )  {
+  card-el {
+    flex-basis: calc(33.3% - 30px);
+  }
+}
+
+@media only screen and (min-width: $small-min) and (max-width: $small-max )  {
+  card-el {
+    flex-basis: calc(50% - 30px);
+  }
+}

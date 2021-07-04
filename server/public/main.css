@@ -1,0 +1,6 @@
+*,*:after,*:before{box-sizing:border-box}body{background-color:#eee;color:#333;font-family:Tahoma, sans-serif;margin:0;padding:0}a{text-decoration:none}a:hover{text-decoration:underline}
+
+card-wrapper{display:flex;margin:20px auto;max-width:1024px;flex-wrap:wrap}.card{background-color:#fff;border-radius:6px;filter:drop-shadow(0 0 20px rgba(0,0,0,0.2));padding:20px 20px 65px 20px;text-align:center;width:100%;margin:0 10px 20px}.card__image{border-radius:50%}.card__title{font-size:28px}.card__cta{background-color:#e26d00;color:#fff;position:absolute;bottom:20px;width:calc( 100% - 30px);left:15px;border:0;padding:5px}@media only screen and (min-width: 1024px){card-el{flex-basis:calc(25% - 30px)}}@media only screen and (min-width: 700px) and (max-width: 1023px){card-el{flex-basis:calc(33.3% - 30px)}}@media only screen and (min-width: 450px) and (max-width: 699px){card-el{flex-basis:calc(50% - 30px)}}
+
+
+/*# sourceMappingURL=main.css.map*/
